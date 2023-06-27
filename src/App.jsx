@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { Menulist, Template } from "./hidden-component";
-// import { Contents } from './Contents.jsx'
+
 
 function App() {
   const [showicon, setShowIcon] = useState(false);
