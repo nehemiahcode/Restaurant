@@ -234,7 +234,7 @@ export function Cards() {
             >
               {card.span}
             </span>
-            <h1 className="text-md font-semibold text-lighterblack">
+            <h1 className="text-lg font-bold text-lighterblack">
               {card.text}
             </h1>
           </div>
