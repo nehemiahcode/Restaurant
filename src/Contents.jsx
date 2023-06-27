@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import React from "react";
 import {
   Typography,
@@ -13,16 +13,14 @@ import {
   Menulist,
   Icon
 } from "./hidden-component";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import Swiperslides from "./Swiper";
+// import Aos from "aos";
+// import "aos/dist/aos.css";
+import Swiperslides from "./Swiper.jsx";
 
 function Contents() {
   const [showdrop, setShowDrop] = useState(false);
   const dropdownRef = useRef();
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
+ 
   const handleDrop = () => {
     setShowDrop(!showdrop);
   };
@@ -39,7 +37,7 @@ function Contents() {
      mx-auto w-[100%] sm:w-[100%] sm:px-10 bg-gradient-to-r
       from-white via-white to-lightPink md:w-[100%]"
     >
-      <div className="h-auto pt-20 md:pt-5"  data-aos="fade-up">
+      <div className="h-auto pt-20 md:pt-5" >
         <BiggerHeading>The Best Restaurants In Your Home</BiggerHeading>
         <p className=" text-lighterblack text-1xl pt-3 font-medium">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -80,7 +78,7 @@ function Contents() {
           <Button>ORDER NOW</Button>
         </div>
       </div>
-      <div className=""  data-aos="fade-up">
+      <div className="" >
         <img
           src="https://bslthemes.com/html/quickeat/assets/img/photo-1.png"
           alt="images"
@@ -99,13 +97,13 @@ export function About() {
       <h1
         id="about"
         className="text-4xl font-bold text-center py-5 text-lighterblack tracking-normal"
-        data-aos="zoom-out"
+  
       >
         How it works
       </h1>
       <p
         className="text-md font-semibold text-center text-lightblack px-10"
-        data-aos="zoom-out"
+   
       >
         Magna sit amet purus gravida quis blandit
         <br />
@@ -117,7 +115,7 @@ export function About() {
         className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto w-[100%] sm:w-[90%] sm:mx-10 md:w-[100%] md:mx-0"
       
       >
-        <div  data-aos="fade-up" className=" bg-white h-auto w-100 px-10 pt-2 flex justify-center flex-col items-center">
+        <div   className=" bg-white h-auto w-100 px-10 pt-2 flex justify-center flex-col items-center">
           <img
             src="https://bslthemes.com/html/quickeat/assets/img/illustration-1.png"
             alt="images"
@@ -149,7 +147,7 @@ export function About() {
             vel.
           </Paragraphs>
         </div>
-        <div  data-aos="fade-up" className=" bg-white h-auto w-100 md:col-span-2 lg:col-span-1 md:px-40 lg:px-10 px-10 pt-2 flex justify-center flex-col items-center">
+        <div   className=" bg-white h-auto w-100 md:col-span-2 lg:col-span-1 md:px-40 lg:px-10 px-10 pt-2 flex justify-center flex-col items-center">
           <img
             src="https://bslthemes.com/html/quickeat/assets/img/illustration-3.png"
             alt="images"
@@ -176,7 +174,7 @@ export function Details() {
       id="serve"
       className="grid grid-cols-1 w-[100%] h-auto pt-8  md:grid-cols-2 md:bg-gradient-to-tr via-white from-white to-lightPink"
     >
-      <div className="h-400px w-[100%] relative"  data-aos="fade-up">
+      <div className="h-400px w-[100%] relative" >
         <img
           src="https://bslthemes.com/html/quickeat/assets/img/photo-3.png"
           alt="images"
@@ -198,7 +196,7 @@ export function Details() {
       </div>
       <div
         className="h-[400px] w-[100%] bg-gradient-to-t from-white  to-lightPink md:bg-none px-4 "
-        data-aos="fade-up"
+     
       >
         <h1 className="text-4xl font-bold text-left py-2  text-lighterblack tracking-normal">
           From your favorite Resturants to your Table
@@ -221,7 +219,7 @@ export function Cards() {
   return (
     <>
       <div
-      data-aos="fade-up"
+  
         className="grid grid-cols-1  pt-6 lg:grid-cols-4 h-auto sm:grid-cols-2 w-[80%] md:w-[90%] gap-4 lg:gap-8 mx-auto"
        
       >
@@ -253,7 +251,7 @@ export function Testimonials() {
         id="test"
         className="w-[100%] h-auto bg-white grid grid-cols-1 md:grid-cols-2 pt-7"
       >
-        <div className=" h-auto"  data-aos="fade-up">
+        <div className=" h-auto" >
           <h1 className="text-4xl font-bold text-left py-2  text-lighterblack tracking-normal px-7">
             What customers say about us
           </h1>
@@ -261,7 +259,7 @@ export function Testimonials() {
             <Swiperslides></Swiperslides>
           </div>
         </div>
-        <div className="h-auto w-[100%] relative"  data-aos="fade-up">
+        <div className="h-auto w-[100%] relative" >
           <img
             src="https://bslthemes.com/html/quickeat/assets/img/photo-4.png"
             alt="images"
@@ -286,14 +284,14 @@ export function Subscribe() {
         className="w-[100%] h-auto grid grid-cols-1 md:grid-cols-2 bg-white pb-6"
       
       >
-        <div className=" w-[100%] pt-4"  data-aos="fade-up">
+        <div className=" w-[100%] pt-4"  >
           <img
             src="https://bslthemes.com/html/quickeat/assets/img/illustration-4.png"
             alt="images"
             className="h-[300px] object-contain w-[100%]"
           />
         </div>
-        <div className="flex flex-col pl-4 "  data-aos="fade-up">
+        <div className="flex flex-col pl-4 " >
           <BiggerHeading>
             Get the menu of your favorite restaurants every day
           </BiggerHeading>
@@ -317,7 +315,7 @@ export function Subscribe() {
 export function Footer() {
   return (
     <>
-      <div  data-aos="fade-up" className="grid grid-cols-1 md:grid-cols-2 bg-slate h-auto pb-7 lg:grid-cols-3 mx-auto">
+      <div   className="grid grid-cols-1 md:grid-cols-2 bg-slate h-auto pb-7 lg:grid-cols-3 mx-auto">
         <div className="flex items-start pl-[1.5rem] pt-[2rem] flex-col md:pl-[6rem] sm:pl-[2rem]">
           <Template />
           <h1 className="text-4xl font-extrabold  text-white leading-10">
