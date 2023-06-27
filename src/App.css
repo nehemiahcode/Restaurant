@@ -1,6 +1,9 @@
 body {
     overflow-x: hidden;
 }
+body,html {
+    scroll-behavior: smooth;
+}
 
 .swiper {
     margin: 20px auto;
