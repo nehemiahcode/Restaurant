@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import React from "react";
 import {
   Typography,
@@ -13,14 +13,18 @@ import {
   Menulist,
   Icon
 } from "./hidden-component";
-// import Aos from "aos";
-// import "aos/dist/aos.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Swiperslides from "./Swiper.jsx";
 
 function Contents() {
   const [showdrop, setShowDrop] = useState(false);
   const dropdownRef = useRef();
- 
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   const handleDrop = () => {
     setShowDrop(!showdrop);
   };
@@ -32,6 +36,7 @@ function Contents() {
 
   return (
     <div
+   
       id="home"
       className="grid grid-cols-1 px-5 md:grid-cols-2 
      mx-auto w-[100%] sm:w-[100%] sm:px-10 bg-gradient-to-r
@@ -103,7 +108,7 @@ export function About() {
       </h1>
       <p
         className="text-md font-semibold text-center text-lightblack px-10"
-   
+        data-aos="fade-up"
       >
         Magna sit amet purus gravida quis blandit
         <br />
@@ -111,7 +116,7 @@ export function About() {
         vulputate eu scelerisque felis.
         <br />
       </p>
-      <div
+      <div  
         className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto w-[100%] sm:w-[90%] sm:mx-10 md:w-[100%] md:mx-0"
       
       >
