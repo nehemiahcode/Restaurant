@@ -120,7 +120,7 @@ export function About() {
         className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto w-[100%] sm:w-[90%] sm:mx-10 md:w-[100%] md:mx-0"
       
       >
-        <div   className=" bg-white h-auto w-100 px-10 pt-2 flex justify-center flex-col items-center">
+        <div       data-aos="fade-up"  className=" bg-white h-auto w-100 px-10 pt-2 flex justify-center flex-col items-center">
           <img
             src="https://bslthemes.com/html/quickeat/assets/img/illustration-1.png"
             alt="images"
